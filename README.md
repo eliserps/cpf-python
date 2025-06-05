@@ -1,12 +1,12 @@
 # 🧾 Projeto: Importador de Dados com Validação e Persistência (Python + PostgreSQL)
 ## 📌 Descrição
-Este projeto consiste em um serviço escrito em **Python**, que realiza a leitura, tratamento, validação e persistência de dados a partir de um arquivo `.txt`. Ele foi desenvolvido como parte de um processo seletivo técnico e atende a todos os requisitos obrigatórios definidos no enunciado da prova.
+Este projeto consiste em um serviço escrito em **Python**, que realiza a leitura, tratamento, validação e persistência de dados a partir de um arquivo `.txt`.
 O serviço está completamente containerizado com **Docker e Docker Compose**, utilizando um banco de dados **PostgreSQL** para armazenar os dados processados.
 ---
 ## ⚙️ Funcionalidades
 - Leitura de arquivo `.txt` com separadores incomuns;
 - Parsing de colunas conforme estrutura esperada;
-- Validação numérica de **CPF** (com descarte dos inválidos);
+- Validação numérica de **CPF**;
 - Higienização de dados (remoção de acentos, espaços extras, etc.);
 - Criação automática da tabela no banco;
 - Inserção apenas de registros válidos no banco PostgreSQL.
