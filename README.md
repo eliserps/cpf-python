@@ -14,16 +14,15 @@ O serviço está completamente containerizado com **Docker e Docker Compose**, u
 ## 🧱 Estrutura de Diretórios
 
 CPF-PYTHON/
-├── app/
-│ ├── db.py # Conexão com o banco, criação de tabela e inserção de dados
-│ ├── main.py # Script principal que orquestra o processo
-│ ├── parser.py # Lê e faz parsing do arquivo de entrada
-│ ├── utils.py # Higienização e normalização de strings
-│ ├── validator.py # Validação de CPF usando validate-docbr
-│ ├── Dockerfile # Dockerfile da aplicação Python
-│ └── docker-compose.yml # Orquestração da aplicação e banco de dados
-├── requirements.txt # Dependências do projeto
-└── README.md # Este documento
+- db.py # Conexão com o banco, criação de tabela e inserção de dados
+- main.py # Script principal que orquestra o processo
+- parser.py # Lê e faz parsing do arquivo de entrada
+- utils.py # Higienização e normalização de strings
+- validator.py # Validação de CPF usando validate-docbr
+- Dockerfile # Dockerfile da aplicação Python
+- docker-compose.yml # Orquestração da aplicação e banco de dados
+- requirements.txt # Dependências do projeto
+- README.md # Este documento
 ---
 
 ## 📥 Entrada
@@ -60,6 +59,12 @@ Apenas registros com CPF válido seguem para inserção no banco.
 
 ---
 
+## ▶️ Como Executar os Testes
+
+Abra o terminal na raiz do projeto e execute:
+
+- docker compose run app python -m unittest {caminho do teste a ser testado}
+
 ## ▶️ Como Executar o Projeto
 
 ### 1. Pré-requisitos
@@ -73,13 +78,4 @@ Abra o terminal na raiz do projeto e execute:
 
 ```bash
 
-# Build dos containers
-
-docker-compose -f app/docker-compose.yml build
-
-# Execução dos containers
-
-docker-compose -f app/docker-compose.yml up
-Docker: Accelerated Container Application Development
-Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you can focus on the code.
- 
+docker compose up --build
