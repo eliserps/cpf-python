@@ -44,8 +44,7 @@ As colunas esperadas no arquivo são:
 ## 🧪 Validação e Higienização
 - **Validação de CPF**: é feita utilizando a biblioteca `validate-docbr`, com base apenas na estrutura numérica válida.
 - **Higienização dos campos**: remoção de acentos, conversão para minúsculas e remoção de espaços em excesso.
-
-Apenas registros com CPF válido seguem para inserção no banco.
+- Apenas registros com CPF válido seguem para inserção no banco.
 ---
 
 ## 🧰 Tecnologias Utilizadas
