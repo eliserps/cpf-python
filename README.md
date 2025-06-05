@@ -13,7 +13,6 @@ O serviço está completamente containerizado com **Docker e Docker Compose**, u
 ---
 ## 🧱 Estrutura de Diretórios
 
-CPF-PYTHON/
 - db.py # Conexão com o banco, criação de tabela e inserção de dados
 - main.py # Script principal que orquestra o processo
 - parser.py # Lê e faz parsing do arquivo de entrada
